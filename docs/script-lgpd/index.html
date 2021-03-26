@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LGPD Banner</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html,
+      body {
+        background-color: rgb(32, 28, 28);
+        font-family: "Roboto", sans-serif;
+      }
+      p,
+      button,
+      a {
+        font-family: "Roboto", sans-serif;
+      }
+      a {
+        text-decoration: none;
+      }
+      main {
+        display: flex;
+        flex-direction: column;
+        max-width: 1230px;
+        left: 10px;
+        right: 10px;
+        height: auto;
+        max-width: 1100px;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 40px 20px;
+        margin: 5% auto 0 auto;
+        box-shadow: 0 0 10px #aaa;
+      }
+      main > h2 {
+        text-align: center;
+        font-size: 22px;
+      }
+      main > p {
+        text-align: center;
+        font-size: 18px;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      main > p:nth-of-type(2) {
+        text-align: center;
+        font-size: 15px;
+        font-weight: 600;
+        margin-top: 15px;
+        margin-bottom: 5px;
+        opacity: 0.3;
+      }
+      main > p:nth-of-type(3) {
+        text-align: center;
+        font-size: 15px;
+        font-weight: 500;
+      }
+      main > span {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 600;
+        margin-top: 30px;
+        opacity: 0.2;
+      }
+      main > button {
+        width: 150px;
+        background-color: #201c1c;
+        color: #fff;
+        padding: 10px 5px;
+        border-radius: 8px;
+        margin: 10px auto 0 auto;
+        display: none;
+        cursor: pointer; 
+      }
+    </style>  
+  </head>
+  <body>
+    <main>
+      <h2> 
+        Script simples para confirmação de utilização dos cookies conforme a
+        LGPD.
+      </h2>
+      <p>
+        Tudo esta sendo gerado pelo js, inclusive o css, então para personalizar
+        o script basta editar este arquivo.
+      </p>
+      <p>
+        Abaixo segue um exemplo do funcionamento, surgindo o banner após 2
+        segundos do carregamento da página.
+      </p>
+      <p>
+        Para acessar o repositório <a href="https://github.com/romeci/romeci.github.io/blob/main/lgpd/lgpd.js">clique aqui</a>
+      </p>
+      <span></span>
+      <button>Limpar este Cookie</button>
+    </main>
+    <footer></footer>
+  </body>
+  <script src="lgpd.js"></script>
+  <script>
+    if (getCookie("lgpd_cookie") != null) {
+      const el_aviso = document.querySelector("span");
+      el_aviso.innerText = "Você já aceitou os cookies =D";
+
+      const el_btn = document.querySelector("main > button");
+      el_btn.style.display = "block";
+      
+      el_btn.addEventListener("click", function (e) {
+        e.preventDefault();
+        document.cookie =
+        "lgpd_cookie=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+        location.reload();
+      });
+    }    
+  </script>
+</html>
