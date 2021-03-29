@@ -1,0 +1,26 @@
+.container-alertas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    &div:nth-of-type(1){
+        margin-right: 10px;
+    }
+}
+div[class^="alerta-submit-form_"] {
+    text-align: center;
+    font: italic normal normal 12px/18px Roboto;
+    letter-spacing: 0px;
+}
+.alerta-submit-form-orientacao {
+    color: #1488ca;
+    margin-right: 10px;
+}
+.alerta-submit-form-concluido {
+    color: #95C11F;
+    margin-right: 10px;
+}
+.alerta-submit-form-erro {
+    color: #FF4325;
+}
+
+
