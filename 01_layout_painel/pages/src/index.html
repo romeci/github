@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="assets/img/assetj.png" />
+  <title>:: ASSETJ Extranet ::</title>
+
+  <!-- font roboto -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- bootstrap -->
+  <link
+    rel="stylesheet"
+    href="assets/libs/bootstrap-5.0.0-beta3-dist/css/bootstrap.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="assets/libs/bootstrap-5.0.0-beta3-dist/css/bootstrap-utilities.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="assets/libs/bootstrap-5.0.0-beta3-dist/css/bootstrap-grid.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="assets/libs/bootstrap-5.0.0-beta3-dist/css/bootstrap-reboot.min.css"
+  />
+  <!-- styles -->
+  <link rel="stylesheet" href="./assets/min/css/style.min.css" />
+
+  <body>
+    <div id="container-painel">
+      <div id="sidebar">
+        <div class="sidebar-topo">
+          <div class="sbm sbm-menu">
+            <i></i><a href="#!">MENU</a>
+          </div>
+        </div>
+        <div class="sidebar-menu">
+          <div class="sbm sbm-perfil">
+            <i></i><a href="#!">Perfil</a>
+          </div>
+          <div class="sbm sbm-adesoes">
+            <i></i><a href="#!">Adesões</a>
+          </div>
+          <div class="sbm sbm-associado">
+            <i></i><a href="#!">Associado</a>
+          </div>
+          <div class="sbm sbm-carteira">
+            <i></i><a href="#!">Carteira</a>
+          </div>
+          <div class="sbm sbm-compras">
+            <i></i><a href="#!">Compras</a>
+          </div>
+          <div class="sbm sbm-dependentes">
+            <i></i><a href="#!">Dependentes</a>
+          </div>
+          <div class="sbm sbm-documentos">
+            <i></i><a href="#!">Documentos</a>
+          </div>
+          <div class="sbm sbm-favoritos">
+            <i></i><a href="#!">Favoritos</a>
+          </div>
+          <div class="sbm sbm-irpf">
+            <i></i><a href="#!">IRPF</a>
+          </div>
+        </div>
+        <div class="sidebar-footer">
+          <div class="sbm sbm-ajuda">
+            <i></i><a href="#!">Ajuda</a>
+          </div>
+        </div>
+      </div>
+      <div id="container-painel-corpo">
+        <header>
+          <div class="container-fluid">
+            <div class="row">
+              <div
+                class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 col-header-painel"
+              >
+                <div class="preload"></div>
+                <div class="hp_foto"></div>
+              </div>
+              <div
+                class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 col-header-painel"
+              >
+                <div class="header-painel-container">
+                  <div class="mb-13">
+                    <strong class="hp_nome_sobrenome">...</strong>
+                    <span class="hp_cargo"></span>
+                  </div>
+                  <div class="mb-36">
+                    <span>Associado desde</span>
+                    <strong class="hp_data_de_associacao">...</strong>
+                  </div>
+                  <div class="mb-10">
+                    <span>Número de Associado</span>
+                    <strong class="hp_n_associado">...</strong>
+                  </div>
+                  <div>
+                    <span>Número de Matrícula</span>
+                    <strong class="hp_numero_matricula">...</strong>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 col-header-painel"
+              >
+                <div class="header-painel-container">
+                  <div class="mb-29">
+                    <strong>Débito em Conta</strong>
+                  </div>
+                  <div>
+                    <span class="mb-5">Limite disponível de:</span>
+                    <h2 class="hp_limite_disponivel">...</h2>
+                  </div>
+                  <div>
+                    <span>Limite toral de:</span>
+                    <strong class="hp_limite_total">...</strong>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 col-header-painel"
+              >
+                <div class="header-painel-container">
+                  <div>
+                    <strong class="mb-45">Planos de Saúde</strong>
+                  </div>
+                  <div class="mb-21">
+                    <h2 class="hp_plano">...</h2>
+                    <strong class="hp_plano_tipo">...</strong>
+                    <span class="hp_plano_contrato_de">...</span>
+                  </div>
+                  <div>
+                    <h3 class="mb-0">Forma de débito</h3>
+                    <strong class="hp_plano_forma_debito">...</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <main>
+          <!-- -------------------- -->
+          <form id="form-painel-socio">
+            <!-- -------------------- -->
+            <div class="container-fluid topo-form">
+              <div class="container">
+                <div class="row">
+                  <h2 class="titulo-form">Configurações do Clube</h2>
+                  <div class="barra-form"></div>
+
+                  <div
+                    class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12"
+                  >
+                    <label
+                      for="form-socio-usuario"
+                      class="form-label label-input-form"
+                      >Usuário</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control input-form"
+                      id="form-socio-usuario"
+                      name="form-socio-usuario"
+                      placeholder="Texto"
+                    />
+                  </div>
+
+                  <div
+                    class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12"
+                  >
+                    <label
+                      for="form-socio-senha"
+                      class="form-label label-input-form"
+                      >Senha Atual</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control input-form"
+                      id="form-socio-senha"
+                      name="form-socio-senha"
+                      placeholder="Texto"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- -------------------- -->
+            <div class="container-fluid corpo-form">
+              <div class="container">
+                <div class="row">
+                  <h2 class="titulo-form">Informações Pessoais</h2>
+                  <div class="barra-form"></div>
+
+                  <div
+                    class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12"
+                  >
+                    <label
+                      for="form-socio-nome"
+                      class="form-label label-input-form"
+                      >Nome</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control input-form"
+                      id="form-socio-nome"
+                      name="form-socio-nome"
+                      placeholder=""
+                    />
+                  </div>
+
+                  <div
+                    class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12"
+                  >
+                    <label
+                      for="form-socio-sobrenome"
+                      class="form-label label-input-form"
+                      >Sobrenome</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control input-form"
+                      id="form-socio-sobrenome"
+                      name="form-socio-sobrenome"
+                      placeholder=""
+                    />
+                  </div>
+
+                  <div
+                    class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12"
+                  >
+                    <label
+                      for="form-socio-email"
+                      class="form-label label-input-form"
+                      >E-mail</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control input-form"
+                      id="form-socio-email"
+                      name="form-socio-email"
+                      placeholder=""
+                    />
+                  </div>
+
+                  <div
+                    class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12"
+                  >
+                    <label
+                      for="form-socio-celular"
+                      class="form-label label-input-form"
+                      >Celular</label
+                    >
+                    <input
+                      type="phone"
+                      class="form-control input-form"
+                      id="form-socio-celular"
+                      name="form-socio-celular"
+                      placeholder="(__) _ ____ - ____"
+                    />
+                  </div>
+
+                  <div
+                    class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12"
+                  >
+                    <label
+                      for="form-socio-telefone"
+                      class="form-label label-input-form"
+                      >Telefone</label
+                    >
+                    <input
+                      type="phone"
+                      class="form-control input-form"
+                      id="form-socio-telefone"
+                      name="form-socio-telefone"
+                      placeholder="(__) ____ - ____"
+                    />
+                  </div>
+
+                  <div
+                    class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12"
+                  >
+                    <label
+                      for="form-socio-cpf"
+                      class="form-label label-input-form"
+                      >CPF</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control input-form"
+                      id="form-socio-cpf"
+                      name="form-socio-cpf"
+                      placeholder="___.___.___-__"
+                    />
+                  </div>
+
+                  <div
+                    class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12"
+                  >
+                    <label
+                      for="form-socio-rg"
+                      class="form-label label-input-form"
+                      >RG</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control input-form"
+                      id="form-socio-rg"
+                      name="form-socio-rg"
+                      placeholder=""
+                    />
+                  </div>
+
+                  <div
+                    class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12"
+                  >
+                    <label
+                      for="form-socio-nascimento"
+                      class="form-label label-input-form"
+                      >Nascimento</label
+                    >
+                    <input
+                      type="date"
+                      class="form-control input-form"
+                      id="form-socio-nascimento"
+                      name="form-socio-nascimento"
+                      placeholder=""
+                    />
+                  </div>
+
+                  <div
+                    class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12"
+                  >
+                    <label
+                      for="form-socio-genero"
+                      class="form-label label-input-form"
+                      >Gênero</label
+                    >
+                    <select
+                      id="form-socio-genero"
+                      name="form-socio-genero"
+                      class="form-select input-form-select"
+                    >
+                      <option>...</option>
+                    </select>
+                  </div>
+
+                  <div
+                    class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12"
+                  >
+                    <label
+                      for="form-socio-naturalidade"
+                      class="form-label label-input-form"
+                      >Naturalidade</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control input-form"
+                      id="form-socio-naturalidade"
+                      name="form-socio-naturalidade"
+                      placeholder=""
+                    />
+                  </div>
+
+                  <div
+                    class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12"
+                  >
+                    <label
+                      for="form-socio-cidadenatal"
+                      class="form-label label-input-form"
+                      >Cidade Natal</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control input-form"
+                      id="form-socio-cidadenatal"
+                      name="form-socio-cidadenatal"
+                      placeholder=""
+                    />
+                  </div>
+
+                  <div
+                    class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12"
+                  >
+                    <label
+                      for="form-socio-estadonatal"
+                      class="form-label label-input-form"
+                      >Estado Natal</label
+                    >
+                    <select
+                      id="form-socio-estadonatal"
+                      name="form-socio-estadonatal"
+                      class="form-select input-form-select"
+                    >
+                      <option>...</option>
+                    </select>
+                  </div>
+
+                  <div
+                    class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12"
+                  >
+                    <label
+                      for="form-socio-estadocivil"
+                      class="form-label label-input-form"
+                      >Estado Civil</label
+                    >
+                    <select
+                      id="form-socio-estadocivil"
+                      name="form-socio-estadocivil"
+                      class="form-select input-form-select"
+                    >
+                      <option>...</option>
+                    </select>
+                  </div>
+
+                  <div
+                    class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12"
+                  >
+                    <label
+                      for="form-socio-nomedopai"
+                      class="form-label label-input-form"
+                      >Nome do Pai</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control input-form"
+                      id="form-socio-nomedopai"
+                      name="form-socio-nomedopai"
+                      placeholder=""
+                    />
+                  </div>
+
+                  <div
+                    class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12"
+                  >
+                    <label
+                      for="form-socio-nomedamae"
+                      class="form-label label-input-form"
+                      >Nome da Mãe</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control input-form"
+                      id="form-socio-nomedamae"
+                      name="form-socio-nomedamae"
+                      placeholder=""
+                    />
+                  </div>
+                </div>
+
+                <div class="row">
+                  <h2 class="titulo-form">Informações Residenciais</h2>
+                  <div class="barra-form"></div>
+
+                  <div
+                    class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12"
+                  >
+                    <label
+                      for="form-socio-cep"
+                      class="form-label label-input-form"
+                      >CEP</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control input-form"
+                      id="form-socio-cep"
+                      name="form-socio-cep"
+                      placeholder="_____-___"
+                    />
+                  </div>
+
+                  <div
+                    class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12"
+                  >
+                    <label
+                      for="form-socio-endereco"
+                      class="form-label label-input-form"
+                      >Endereço</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control input-form"
+                      id="form-socio-endereco"
+                      name="form-socio-endereco"
+                      placeholder=""
+                    />
+                  </div>
+
+                  <div
+                    class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12"
+                  >
+                    <label
+                      for="form-socio-numero"
+                      class="form-label label-input-form"
+                      >Número</label
+                    >
+                    <input
+                      type="number"
+                      class="form-control input-form"
+                      id="form-socio-numero"
+                      name="form-socio-numero"
+                      placeholder=""
+                    />
+                  </div>
+
+                  <div
+                    class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12"
+                  >
+                    <label
+                      for="form-socio-complemento"
+                      class="form-label label-input-form"
+                      >Complemento</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control input-form"
+                      id="form-socio-complemento"
+                      name="form-socio-complemento"
+                      placeholder=""
+                    />
+                  </div>
+
+                  <div
+                    class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12"
+                  >
+                    <label
+                      for="form-socio-bairro"
+                      class="form-label label-input-form"
+                      >Bairro</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control input-form"
+                      id="form-socio-bairro"
+                      name="form-socio-bairro"
+                      placeholder=""
+                    />
+                  </div>
+
+                  <div
+                    class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12"
+                  >
+                    <label
+                      for="form-socio-cidade"
+                      class="form-label label-input-form"
+                      >Cidade</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control input-form"
+                      id="form-socio-cidade"
+                      name="form-socio-cidade"
+                      placeholder=""
+                    />
+                  </div>
+
+                  <div
+                    class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12"
+                  >
+                    <label
+                      for="form-socio-estado"
+                      class="form-label label-input-form"
+                      >Estado</label
+                    >
+                    <select
+                      id="form-socio-estado"
+                      name="form-socio-estado"
+                      class="form-select input-form-select"
+                    >
+                      <option>...</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <h2 class="titulo-form">Informações Profissionais</h2>
+                  <div class="barra-form"></div>
+
+                  <div
+                    class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12"
+                  >
+                    <label
+                      for="form-socio-cargo"
+                      class="form-label label-input-form"
+                      >Cargo</label
+                    >
+                    <select
+                      id="form-socio-cargo"
+                      name="form-socio-cargo"
+                      class="form-select input-form-select"
+                    >
+                      <option>...</option>
+                    </select>
+                  </div>
+
+                  <div
+                    class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12"
+                  >
+                    <label
+                      for="form-socio-localdetrabalho"
+                      class="form-label label-input-form"
+                      >Local de trabalho</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control input-form"
+                      id="form-socio-localdetrabalho"
+                      name="form-socio-localdetrabalho"
+                      placeholder=""
+                    />
+                  </div>
+
+                  <div
+                    class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12"
+                  >
+                    <label
+                      for="form-socio-distrito"
+                      class="form-label label-input-form"
+                      >Distrito</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control input-form"
+                      id="form-socio-distrito"
+                      name="form-socio-distrito"
+                      placeholder=""
+                    />
+                  </div>
+
+                  <div
+                    class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12"
+                  >
+                    <label
+                      for="form-socio-comarca"
+                      class="form-label label-input-form"
+                      >Comarca</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control input-form"
+                      id="form-socio-comarca"
+                      name="form-socio-comarca"
+                      placeholder=""
+                    />
+                  </div>
+
+                  <div
+                    class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12"
+                  >
+                    <label
+                      for="form-socio-cargi-cidade"
+                      class="form-label label-input-form"
+                      >Cidade</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control input-form"
+                      id="form-socio-cargi-cidade"
+                      name="form-socio-cargi-cidade"
+                      placeholder=""
+                    />
+                  </div>
+
+                  <div
+                    class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12"
+                  >
+                    <label
+                      for="form-socio-orgao"
+                      class="form-label label-input-form"
+                      >Órgão</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control input-form"
+                      id="form-socio-orgao"
+                      name="form-socio-orgao"
+                      placeholder=""
+                    />
+                  </div>
+
+                  <div
+                    class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12"
+                  >
+                    <label
+                      for="form-socio-cargo-telefone"
+                      class="form-label label-input-form"
+                      >Telefone</label
+                    >
+                    <input
+                      type="phone"
+                      class="form-control input-form"
+                      id="form-socio-cargo-telefone"
+                      name="form-socio-cargo-telefone"
+                      placeholder="(__) ____ - ____"
+                    />
+                  </div>
+
+                  <div
+                    class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12"
+                  >
+                    <label
+                      for="form-socio-ramal"
+                      class="form-label label-input-form"
+                      >Ramal</label
+                    >
+                    <input
+                      type="number"
+                      class="form-control input-form"
+                      id="form-socio-ramal"
+                      name="form-socio-ramal"
+                      placeholder=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- -------------------- -->
+            <div class="container-fluid footer-form">
+              <div class="container">
+                <div class="row">
+                  <button type="submit" class="btn-submit-form">Salvar</button>
+
+                  <div
+                    class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3"
+                  >
+                    <!--  -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- -------------------- -->
+          </form>
+          <!-- -------------------- -->
+        </main>
+        <footer>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
+                <!--  -->
+              </div>
+              <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
+                <!--  -->
+              </div>
+              <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
+                <!--  -->
+              </div>
+              <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
+                <!--  -->
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+
+  <scripts_footer>
+    <!-- jquery -->
+    <script src="./assets/libs/jquery-3.6.0.min.js"></script>
+    <!-- bootstrap -->
+    <script src="assets/libs/bootstrap-5.0.0-beta3-dist/js/bootstrap.min.js"></script>
+    <!-- script  -->
+    <script src="assets/min/js/script.min.js"></script>
+  </scripts_footer>
+</html>
