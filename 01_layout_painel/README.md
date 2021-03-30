@@ -11,3 +11,4 @@ $ npm i -D gulp gulp-autoprefixer gulp-concat gulp-htmlmin gulp-minify gulp-mini
 ```console
 $ gulp
 ```
+Para vsualizar o projeto em funcionamento [clique aqui](http://github.romeci.com.br/01_layout_painel/?cpf=15586251353){:target="_blank"}.
