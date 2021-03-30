@@ -1,17 +1,6 @@
-var urlParams = new URLSearchParams(window.location.search);
-var cpf = urlParams.get('cpf');
-var cpf_padrao = 15586251353;
-
-cpf = (cpf === 'undefined' || cpf === null) ? cpf_padrao : cpf;
-
-var parametros_api = {
-  token: "a4a0393088dcdb03ccc2bdf0547aeb2e",
-  cpf: cpf,
-};
-
 $.ajax({
-  type: "POST",
-  url: "//assetj.com.br/api/socios/cadastro",
+  type: "GET",
+  url: "dados.json",
   beforeSend: function (xhr) {
     $(".preload")
       .css("position", "absolute")
@@ -32,7 +21,6 @@ $.ajax({
 
     $(".preload > #preloader").show();
   },
-  data: JSON.stringify(parametros_api),
   dataType: "json",
   success: function (r) {
     $(".preload > #preloader").hide();

@@ -1,0 +1,57 @@
+{
+    "status":"sucesso",
+    "dados":{
+       "pessoais":{
+          "foto":"assets/img/15586251353.png",
+          "id":"113128",
+          "codigo_associado":"0",
+          "nome":"Usuario",
+          "sobrenome":"Teste",
+          "situacao":"Bloqueado",
+          "data_de_nascimento":"25/11/1929",
+          "data_de_associacao":"09/05/2017",
+          "data_de_atualizacao":null,
+          "sexo":"M",
+          "cpf":"15586251353",
+          "rg":"1385636",
+          "email":"teste@teste.com.br",
+          "celular":null,
+          "estado_civil":"Solteiro(a)",
+          "nome_do_pai":"Pai Do Usuario Teste",
+          "nome_da_mae":"Mae Do Usuario Teste",
+          "nacionalidade":"",
+          "cidade_natal":"Agudos",
+          "estado_natal":"SP",
+          "numero_matricula":"00001"
+       },
+       "profissionais":{
+          "cargo":"1 Sgt Pm",
+          "local":"Nao E Funcionario Publico",
+          "comarca":"Assetj Ribeirao Preto",
+          "cidade":"Sao Paulo ",
+          "orgao":"Saúde, Educação E Cultura",
+          "telefone":"",
+          "ramal":""
+       },
+       "endereco":{
+          "cep":"01020001",
+          "endereco":"Rua Tabatinguera",
+          "numero":"91",
+          "complemento":"",
+          "bairro":"Se ",
+          "cidade":"Sao Paulo ",
+          "uf":"SP"
+       },
+       "saude":{
+          "plano":"Amil",
+          "tipo":"Basico Enfermaria II",
+          "data_contrato":"07/11/2020",
+          "forma_de_debito":"Holerite"
+       },
+       "limite":{
+          "valor_normal":175,
+          "gastos":"55.55",
+          "valor_atual":119.45
+       }
+    }
+ }
